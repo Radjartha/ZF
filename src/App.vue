@@ -20,8 +20,8 @@ import {ref} from "vue"
 
   <back-to-top
 			visibleoffset="100"
-			right="30px"
-			bottom="20px"
+			right="100px"
+			bottom="105px"
 			class="shadow-lg"
 		>
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">

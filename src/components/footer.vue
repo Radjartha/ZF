@@ -32,7 +32,7 @@ import { Footer, FooterCopyright, FooterLinkGroup, FooterLink, FooterBrand, Foot
     </div>
     <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
     <div class="sm:flex sm:items-center sm:justify-between">
-      <FooterCopyright href="/" by="Kitimaru" copyright-message="Developer" />
+      <FooterCopyright href="/" by="Zealofur Interactive" copyright-message="" />
       <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
         <FooterIcon href="https://www.facebook.com" target="_blank">
           <svg class="w-4 h-4 text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -71,8 +71,12 @@ import { Footer, FooterCopyright, FooterLinkGroup, FooterLink, FooterBrand, Foot
             />
           </svg>
         </FooterIcon>
-
+        
       </div>
+    </div>
+
+    <div class="mt-6 items-center text-center">
+      <h1 class="text-gray-500 font-thin">By Kitimaru / Radjartha Developer</h1>
     </div>
   </Footer>
 </template>
