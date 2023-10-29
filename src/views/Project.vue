@@ -44,7 +44,7 @@ export default {
     }
   },
   mounted () {
-    axios.get('http://localhost:3000/projectsdetail/'+this.$route.params.id)
+    axios.get('https://zfback.onrender.com/projectsdetail/'+this.$route.params.id)
   .then((response) => this.setProject(response.data))
     .catch((error) => console.log(error))
 

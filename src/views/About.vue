@@ -50,7 +50,7 @@ export default {
     }
   },
   mounted () {
-    axios.get('http://localhost:3000/developer')
+    axios.get('https://zfback.onrender.com/developer')
   .then((response) => this.setDevelopers(response.data))
     .catch((error) => console.log(error))
 

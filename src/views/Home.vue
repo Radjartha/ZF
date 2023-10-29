@@ -79,7 +79,7 @@ export default {
     }
   },
   mounted () {
-    axios.get('http://localhost:3000/projectsdetail')
+    axios.get('https://zfback.onrender.com/projectsdetail')
   .then((response) => this.setProjects(response.data))
     .catch((error) => console.log(error))
 
