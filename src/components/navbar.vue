@@ -16,7 +16,7 @@ import { Navbar, NavbarLogo, NavbarCollapse, NavbarLink } from 'flowbite-vue'
           <NavbarLink class="">
             <router-link to="/" class="nav-link text-black hover:text-[#f9872a] transition duration-300 ">Home</router-link>
           </NavbarLink>
-          <NavbarLink link="/about">
+          <NavbarLink>
             <router-link to="/about"  class="NavbarLink text-black hover:text-[#f9872a] transition duration-300">About</router-link>
           </NavbarLink>
           <NavbarLink><router-link to="/portfolio" class="NavbarLink text-black hover:text-[#f9872a] transition duration-300">Portfolio</router-link></NavbarLink>
