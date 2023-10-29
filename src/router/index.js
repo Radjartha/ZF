@@ -5,7 +5,7 @@ import portfolio from '../views/portfolio.vue'
 import contact from '../views/Contact.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes: [
     {
       path: '/',
