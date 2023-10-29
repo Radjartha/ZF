@@ -1,5 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import about from '../views/About.vue'
+import portfolio from '../views/portfolio.vue'
+import contact from '../views/Contact.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,7 +18,7 @@ const router = createRouter({
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../views/About.vue')
+      component: about
     },
     {
       path: '/portfolio',
@@ -23,7 +26,7 @@ const router = createRouter({
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../views/portfolio.vue')
+      component: portfolio
     },
     {
       path: '/contact',
@@ -31,7 +34,7 @@ const router = createRouter({
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../views/Contact.vue')
+      component: contact
     },
     {
       path: '/project/:id',
