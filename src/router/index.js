@@ -4,6 +4,7 @@ import about from '../views/About.vue'
 import portfolio from '../views/portfolio.vue'
 import contact from '../views/Contact.vue'
 
+
 const router = createRouter({
   history: createWebHistory(),
   routes: [
@@ -40,6 +41,22 @@ const router = createRouter({
       path: '/project/:id',
       name: 'project',
       component: () => import('../views/Project.vue')
+    },
+    {
+      path: '/terms',
+      name: 'terms',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/tos/tos.vue')
+    },
+    {
+      path: '/policy',
+      name: 'policy',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/tos/pp.vue')
     },
   ]
 })

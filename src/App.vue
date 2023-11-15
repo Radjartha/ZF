@@ -20,7 +20,7 @@ import {ref} from "vue"
 
   <back-to-top
 			visibleoffset="100"
-			right="100px"
+
 			bottom="105px"
 			class="shadow-lg"
 		>
@@ -70,7 +70,24 @@ export default {
 	border-radius: 50%;
 	font-size: 22px;
 	line-height: 22px;
+	
+
 }
+@media only screen and (max-width: 768px) {
+	.vue-back-to-top {
+	@apply p-2 bg-[#c42e00] hover:bg-[#c42e00] text-white transition
+        duration-500
+        ease-in-out
+        transform
+        hover:-translate-y-1 hover:scale-110;
+	border-radius: 50%;
+	font-size: 22px;
+	line-height: 22px;
+	
+
+}
+}
+
 .fade-enter-active {
 	animation: coming 0.4s;
 	animation-delay: 0.2s;

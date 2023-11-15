@@ -24,7 +24,7 @@ import axios from 'axios';
           </div>
           <div class="w-full self-end px-4 lg:w-1/2">
             <div class="relative mt-2 lg:right-0 lg:mt-9">
-              <img src="../assets/img/Main.webp" alt="Sandhika Galih" class="relative z-10 mx-auto max-w-full" />
+              <img src="../assets/img/Main.webp" alt=". . ." class="relative z-10 mx-auto max-w-full" />
               <div class="text-center items-center content md:hidden ">
               <p class="mb-5 font-medium leading-relaxed text-secondary">Di sini kamu bisa menerima dukungan dan apresiasi karya dengan mudah dan menyenangkan sepeti saat kamu ditraktir seorang teman.</p>
               <Button class="" gradient="cyan-blue" href="https://discord.com/invite/DsU65Bwmu2">
