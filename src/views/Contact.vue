@@ -3,6 +3,7 @@ import { Button } from 'flowbite-vue'
 </script>
 
 <template>
+    <main class="bg-[#cdc6ce]">
     <div class="px-4 md:px-10 text-center items-center align-middle">
       <h1 class=" pt-24 text-center font-bold text-3xl">Zealofur Contact</h1>
       <p class="font-medium mb-10 leading-relaxed md:px-[200px]">Great news everyone, we now officially have our own social medias. Make sure you know how to differentiate the real or fake ones and please share our links to your friends and family if you have time cause the bigger the merrier!!</p>
@@ -64,7 +65,7 @@ import { Button } from 'flowbite-vue'
             </a>
         </div>
         <!-- Form -->
-        <div>
+        <div class="pb-16">
 <div class="px-0 md:px-[200px] mt-10">
     <form action="">
         <div class="mb-6">
@@ -86,4 +87,5 @@ import { Button } from 'flowbite-vue'
 </div>
         </div>
     </div>
+</main>
 </template>

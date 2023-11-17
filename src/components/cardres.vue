@@ -5,7 +5,7 @@ import { Button } from 'flowbite-vue'
 <template>
 
 
-    <div class="">
+    <div class="bg-white">
         <!--Card 1-->
         <div class="rounded overflow-hidden shadow-lg">
           <img class="w-full" :src=" '../assets/img/' + project.gambar" alt="...">

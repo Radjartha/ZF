@@ -6,6 +6,7 @@ import carddev from '../components/carddev.vue';
 </script>
 
 <template>
+<main class="bg-[#cdc6ce]">
 
   <div class="w-full bg-cover bg-center" style="height:32rem; background-image: url('/assets/img/Bg.png');">
         <div class="flex items-center justify-center h-full w-full bg-gray-900 bg-opacity-50">
@@ -31,7 +32,7 @@ import carddev from '../components/carddev.vue';
   </div>
 
 </div> 
-
+</main>
 
 </template>
 
