@@ -7,7 +7,18 @@ module.exports = {
     "node_modules/flowbite/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    container: {
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '5rem',
+        xl: '6rem',
+        '2xl': '8rem',
+      },
+    },
+    extend: {
+      
+    },
   },
   plugins: [
     require('flowbite/plugin')

@@ -3,8 +3,8 @@ import { Footer, FooterCopyright, FooterLinkGroup, FooterLink, FooterBrand, Foot
 </script>
 
 <template>
-  <Footer footer-type="socialmedia">
-    <div class="md:flex md:justify-between pt-24">
+  <Footer class="" footer-type="socialmedia">
+    <div class="container md:flex md:justify-between pt-24">
       <FooterBrand href="#" src="../assets/img/ZealoFurr_Interactive_Icon.png" alt="ZealoFurr" name="ZealoFurr" />
       <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
         <div>
@@ -31,7 +31,7 @@ import { Footer, FooterCopyright, FooterLinkGroup, FooterLink, FooterBrand, Foot
       </div>
     </div>
     <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-    <div class="sm:flex sm:items-center sm:justify-between">
+    <div class="container sm:flex sm:items-center sm:justify-between">
       <FooterCopyright href="/" by="Zealofur Interactive" copyright-message="" />
       <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
         <FooterIcon href="https://www.facebook.com" target="_blank">
