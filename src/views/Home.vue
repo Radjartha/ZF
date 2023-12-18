@@ -3,6 +3,7 @@
 import { Button } from 'flowbite-vue'
 import cardres from '../components/cardres.vue';
 import axios from 'axios';
+
 </script>
 
 <template >
@@ -11,27 +12,24 @@ import axios from 'axios';
     <section id="home" class="pt-24 md:pt-0">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full self-center px-4 lg:w-1/2">
-            <div class="text-center md:text-left">
-            <h1 class="text-base font-semibold text-primary md:text-xl">Hellow, my name is Zela as CEO of ZealoFurr Interactive</h1>
-            <h1><span class="mt-1 block text-4xl font-bold text-dark lg:text-3xl">Furry Community based in Indonesia to reach out the lost Furries as a home for creators, talents, players, and developers</span></h1>
-            </div>
-            <h2 class="mb-5 text-lg font-medium text-secondary lg:text-2xl"></h2>
-            <p class="hidden md:flex mb-6 font-medium leading-relaxed text-secondary">Di sini kamu bisa menerima dukungan dan apresiasi karya dengan mudah dan menyenangkan sepeti saat kamu ditraktir seorang teman.</p>
-            <div class="hidden md:contents ">
+          <div class="max-[1020px]:text-center w-full self-center px-4 lg:w-1/2">
+            <h1 class="text-base font-semibold text-primary md:text-xl">Hello! The Name is Zela.</h1>
+            <h1><span class="mt-1 leading-[50px] block text-4xl font-bold text-dark lg:text-[60px]">Welcome to 
+              <br>
+              ZealoFurr Interactive</span></h1>
+              <transition name="fade" mode="out-in">
+        <p class="pt-6  mb-6 font-medium leading-relaxed text-secondary" :key="displayText">{{ displayText }}</p>
+      </transition>
+
+            <div class="">
             <Button class="" gradient="cyan-blue" href="https://discord.com/invite/DsU65Bwmu2">
             Join Discord Community
-            </Button></div>
+            </Button>
+          </div>
           </div>
           <div class="w-full self-end px-4 lg:w-1/2">
             <div class="relative mt-2 lg:right-0 lg:mt-9">
               <img src="../assets/img/Main.webp" alt=". . ." class="relative z-10 mx-auto max-w-full" />
-              <div class="text-center items-center content md:hidden ">
-              <p class="mb-5 font-medium leading-relaxed text-secondary">Di sini kamu bisa menerima dukungan dan apresiasi karya dengan mudah dan menyenangkan sepeti saat kamu ditraktir seorang teman.</p>
-              <Button class="" gradient="cyan-blue" href="https://discord.com/invite/DsU65Bwmu2">
-            Join Discord Community
-            </Button>
-            </div>
             </div>
           </div>
         </div>
@@ -39,17 +37,32 @@ import axios from 'axios';
     </section>
 
 
-<section id="about" class="pt-24 pb-24">
+<section id="about" class="px-5">
 
-
-<div class="md:px-10 text-center items-center align-middle">
-  <h3 class="font-bold uppercase text-crimson text-lg-mb-3">About</h3>
+<div class="py-24 container mx-auto items-center"> 
+	<section class="sm:justify-between items-center flex max-[900px]:flex-col">
+		<!-- Banner left contents -->
+		<div class="w-full md:w-3/5 text-left">
+      <h3 class="font-bold uppercase text-crimson text-lg-mb-3">About</h3>
   <h4 class="font-bold text-slate-900 text-3xl mb-5">ZealoFurr Community!</h4>
-  <p class=" font-medium mb-10 leading-relaxed md:px-24">ZealoFurr Interactive is a Furry Community based in Indonesia to reach out the lost Furries as a home for creators, talents, players, and developers, and to be the main bridge between all Furry Communities in the Country.</p>
-  <Button  gradient="cyan-blue" href="https://discord.com/invite/DsU65Bwmu2">
+            <p class="font-general-medium mt-2 text-justify  leading-1 ">
+              ZealoFurr Interactive is a Furry Community based in Indonesia to reach out the lost Furries as a home for creators, talents, players, and developers, and to be the main bridge between all Furry Communities in the Country.
+			</p>
+      
+			<div class="pt-8">
+        <Button  gradient="cyan-blue" href="https://discord.com/invite/DsU65Bwmu2">
 Join Discord Community
   </Button>
+		</div>
+
+		</div>
+		<!-- Banner right illustration -->
+		<div class="w-full  md:w-2/6">
+      <iframe class="flex" src="https://discord.com/widget?id=1090183348674117634&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+		</div>
+	</section>
 </div>
+
 
 </section>
 </div>
@@ -162,30 +175,47 @@ Join Discord Community
                 transform: translateX(0);
             }
         }
+        
 </style>
 
 <script>
 export default {
-  props: ['project'],
-
+  // ... (your existing code) ...
   data() {
     return {
-      projects: []
-    }
+      projects: [],
+      texts: [        "We Support Furry Talents.",
+        "We Support Furry Players.",
+        "We Support Furry Developers."], // Add the texts you want to cycle through
+      currentTextIndex: 0,
+      displayText: "",
+      intervalId: null,
+    };
   },
   methods: {
     setProjects(data) {
-      this.projects = data
-    }
+      this.projects = data;
+    },
+    updateText() {
+      this.displayText = this.texts[this.currentTextIndex];
+      this.currentTextIndex = (this.currentTextIndex + 1) % this.texts.length;
+    },
   },
-  mounted () {
+  mounted() {
+    // Fetch projects as before
     axios.get('https://zfback.onrender.com/projectsdetail')
-  .then((response) => this.setProjects(response.data))
-    .catch((error) => console.log(error))
+      .then((response) => this.setProjects(response.data))
+      .catch((error) => console.log(error));
 
-
-
-
-  }
-}
+    // Set up auto-typing interval
+    this.intervalId = setInterval(() => {
+      this.updateText();
+      setTimeout(() => this.updateText(), 0); // Adjust the interval between text changes as needed
+    }, 2000); // Adjust the interval for the main text change as needed
+  },
+  beforeDestroy() {
+    // Clear the interval to prevent memory leaks
+    clearInterval(this.intervalId);
+  },
+};
 </script>

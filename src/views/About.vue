@@ -18,8 +18,12 @@ import carddev from '../components/carddev.vue';
   
   <section class="container mx-auto px-5 mt-10">
   <div>
-    <h1 class="font-bold text-3xl text-center py-4">ZealoFurr</h1>
-    <p class="px-0 min-[1100px]:px-[200px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, illo debitis? Ab dolorem molestias consectetur suscipit, animi quas veritatis voluptatum dolore excepturi reiciendis recusandae asperiores optio laboriosam minima atque repellat.</p>
+    <h1 class="font-bold text-3xl text-center py-4">Zela and The Furries Diary</h1>
+    <p class="px-0 min-[1100px]:px-[200px]">Dear Diary, ZealoFurr Interactive was founded on 19th May 2023 to Develop and Publish Video Games from engaging few Furry Communities into a small team for those who wants to collaborate, having fun, and thrive in the Game Industry.     
+</p>
+<p class="px-0 min-[1100px]:px-[200px]">
+  We realized that Furries are not just the community and we are not just all about Game Development, there's more than that. Each person have pride in Furry Fandom to be one of the thriving creators, talents, players, and developers in the 21st Century. We are reaching out Furry Enthusiasts of different kind of roles, like Artist, Cosplayers, Musicians, Animators, Story Writers, Electronic Geeks, Tubers, Role Players, Gamers, Programmers, and so much more talents. We are inviting you all to the community for collaborations and opportunities.
+</p>
   </div>
   <h1 class=" pt-24 text-center font-bold text-3xl">Team Member</h1>
   </section>
