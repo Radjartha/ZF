@@ -10,8 +10,8 @@ import { Footer, FooterCopyright, FooterLinkGroup, FooterLink, FooterBrand, Foot
         <div>
           <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Profile</h2>
           <FooterLinkGroup class="flex flex-col items-start">
-            <FooterLink class="mb-4" href="/">About</FooterLink>
-            <FooterLink class="mb-4" href="/">Portfolio</FooterLink>
+            <FooterLink class="mb-4" href="/about">About Us</FooterLink>
+            <FooterLink class="mb-4" href="/portfolio">Portfolio</FooterLink>
           </FooterLinkGroup>
         </div>
         <div>

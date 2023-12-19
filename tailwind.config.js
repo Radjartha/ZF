@@ -17,8 +17,12 @@ module.exports = {
       },
     },
     extend: {
-      
+      colors:{
+        'landingbg':'#fdefd5',
+        'textcoklat':'#2f1613'
+      }
     },
+
   },
   plugins: [
     require('flowbite/plugin')

@@ -4,7 +4,7 @@ import axios from 'axios';
 </script>
 
 <template>
-<main class="bg-[#cdc6ce]">
+<main class="bg-landingbg">
 <div class="container mx-auto px-5 ">
 <div class="p-10 grid grid-cols-1 min-[1009px]:grid-cols-3  gap-5">
   <div class="" v-for="project in projects" :key="project.id">

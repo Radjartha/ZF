@@ -7,12 +7,14 @@ import axios from 'axios';
 </script>
 
 <template >
-  <main class="bg-[#cdc6ce]">
+  <main class="bg-landingbg">
     <div class="container mx-auto px-5">
+      <!-- Landing -->
     <section id="home" class="pt-24 md:pt-0">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="max-[1020px]:text-center w-full self-center px-4 lg:w-1/2">
+            <div class="text-textcoklat">
             <h1 class="text-base font-semibold text-primary md:text-xl">Hello! The Name is Zela.</h1>
             <h1><span class="mt-1 leading-[50px] block text-4xl font-bold text-dark lg:text-[60px]">Welcome to 
               <br>
@@ -20,14 +22,12 @@ import axios from 'axios';
               <transition name="fade" mode="out-in">
         <p class="pt-6  mb-6 font-medium leading-relaxed text-secondary" :key="displayText">{{ displayText }}</p>
       </transition>
-
-            <div class="">
+            </div>
             <Button class="" gradient="cyan-blue" href="https://discord.com/invite/DsU65Bwmu2">
             Join Discord Community
             </Button>
           </div>
-          </div>
-          <div class="w-full self-end px-4 lg:w-1/2">
+          <div class="w-full self-end px-4 lg:w-2/4">
             <div class="relative mt-2 lg:right-0 lg:mt-9">
               <img src="../assets/img/Main.webp" alt=". . ." class="relative z-10 mx-auto max-w-full" />
             </div>
@@ -36,10 +36,9 @@ import axios from 'axios';
       </div>
     </section>
 
-
-<section id="about" class="px-5">
-
-<div class="py-24 container mx-auto items-center"> 
+    <!-- About -->
+    <section id="about" class="px-5">
+    <div class="py-24 container mx-auto items-center"> 
 	<section class="sm:justify-between items-center flex max-[900px]:flex-col">
 		<!-- Banner left contents -->
 		<div class="w-full md:w-3/5 text-left">
@@ -58,15 +57,16 @@ Join Discord Community
 		</div>
 		<!-- Banner right illustration -->
 		<div class="w-full  md:w-2/6">
-      <iframe class="flex" src="https://discord.com/widget?id=1090183348674117634&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      <iframe class="flex" src="https://discord.com/widget?id=1090183348674117634&theme=dark" width="300" height="450" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 		</div>
 	</section>
-</div>
+    </div>
 
 
-</section>
-</div>
+    </section>
+    </div>
 
+    
 <section class="bg-white pb-16">
   <main class="container mx-auto">
   <div class="text-center pt-6 pb-6">
@@ -121,6 +121,8 @@ Join Discord Community
 </template>
 
 <style scoped>
+
+
         .slider-container {
             display: flex;
             overflow: hidden;

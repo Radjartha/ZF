@@ -6,7 +6,7 @@ import carddev from '../components/carddev.vue';
 </script>
 
 <template>
-<main class="bg-[#cdc6ce]">
+<main class="bg-landingbg">
 
   <div class="w-full bg-cover bg-center" style="height:32rem; background-image: url('/assets/img/Bg.png');">
         <div class="flex items-center justify-center h-full w-full bg-gray-900 bg-opacity-50">
@@ -19,9 +19,10 @@ import carddev from '../components/carddev.vue';
   <section class="container mx-auto px-5 mt-10">
   <div>
     <h1 class="font-bold text-3xl text-center py-4">Zela and The Furries Diary</h1>
-    <p class="px-0 min-[1100px]:px-[200px]">Dear Diary, ZealoFurr Interactive was founded on 19th May 2023 to Develop and Publish Video Games from engaging few Furry Communities into a small team for those who wants to collaborate, having fun, and thrive in the Game Industry.     
-</p>
-<p class="px-0 min-[1100px]:px-[200px]">
+
+    <p class="px-10 min-[1100px]:px-[300px] pb-5">Dear Diary, ZealoFurr Interactive was founded on 19th May 2023 to Develop and Publish Video Games from engaging few Furry Communities into a small team for those who wants to collaborate, having fun, and thrive in the Game Industry.     
+  </p>
+<p class="px-10 min-[1100px]:px-[300px]">
   We realized that Furries are not just the community and we are not just all about Game Development, there's more than that. Each person have pride in Furry Fandom to be one of the thriving creators, talents, players, and developers in the 21st Century. We are reaching out Furry Enthusiasts of different kind of roles, like Artist, Cosplayers, Musicians, Animators, Story Writers, Electronic Geeks, Tubers, Role Players, Gamers, Programmers, and so much more talents. We are inviting you all to the community for collaborations and opportunities.
 </p>
   </div>
@@ -39,6 +40,8 @@ import carddev from '../components/carddev.vue';
 </main>
 
 </template>
+
+
 
 <script>
 export default {

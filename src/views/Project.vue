@@ -6,7 +6,7 @@ import axios from 'axios';
 </script>
 
 <template>
-<main class="bg-[#cdc6ce] pb-16">
+<main class="bg-landingbg pb-16">
 <div class="container mx-auto px-5 pt-14">
   <div class="mb-5 text-center items-center">
     <h1 class="font-bold text-slate-900 text-3xl">{{ projects.judul }}</h1>
