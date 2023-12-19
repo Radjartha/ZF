@@ -20,6 +20,20 @@ module.exports = {
       colors:{
         'landingbg':'#fdefd5',
         'textcoklat':'#2f1613'
+      },
+      animation: {
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+        'infinite-scroll-2': 'infinite-scroll-2 25s linear infinite'
+      },
+      keyframes :{
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        },
+        'infinite-scroll-2': {
+          from: { transform: 'translateX(-100%)' },
+          to: { transform: 'translateX(0)' },
+        },
       }
     },
 

@@ -4,6 +4,17 @@ import { Button } from 'flowbite-vue'
 import cardres from '../components/cardres.vue';
 import axios from 'axios';
 
+const logos = [
+  { src: "https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png", alt: 'Facebook' },
+  { src: "https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png", alt: 'Disney' },
+  { src: "https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png", alt: 'Airbnb' },
+  { src: "https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png", alt: 'Apple' },
+  { src: "https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png", alt: 'Spark' },
+  { src: "https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png", alt: 'Samsung' },
+  { src: "https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png", alt: 'Quora' },
+  { src: "https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png", alt: 'Sass' },
+]
+
 </script>
 
 <template >
@@ -72,37 +83,42 @@ Join Discord Community
   <div class="text-center pt-6 pb-6">
     <h4 class="font-bold text-slate-900 text-3xl mb-5">Partner Support</h4>
   </div>
-  <div class="slider-container">
-    <!-- Add your client logos here -->
-    <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="Client 1" class="logo1">
-    <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="Client 2" class="logo1">
-    <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="Client 1" class="logo1">
-    <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="Client 2" class="logo1">
-    <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="Client 1" class="logo1">
-    <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="Client 2" class="logo1">
-    <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="Client 1" class="logo1">
-    <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="Client 2" class="logo1">
-    <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="Client 1" class="logo1">
-    <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="Client 2" class="logo1">
-    <!-- Add more client logos as needed -->
-</div>
+  <div class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+    <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+      <template v-for="logo in logos">
+        <li>
+          <img :src="logo.src" :alt="logo.alt" class="logocarousel" />
+        </li>
+      </template>
+    </ul>
+    <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
+      <template v-for="logo in logos">
+        <li>
+          <img :src="logo.src" :alt="logo.alt" class="logocarousel" />
+        </li>
+      </template>
+    </ul>    
+  </div>
 <div class="text-center pt-6 pb-6">
     <h4 class="font-bold text-slate-900 text-3xl mb-5">Affiliation</h4>
+    <div class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+    <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll-2">
+      <template v-for="logo in logos">
+        <li>
+          <img :src="logo.src" :alt="logo.alt" class="logocarousel" />
+        </li>
+      </template>
+    </ul>
+    <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll-2" aria-hidden="true">
+      <template v-for="logo in logos">
+        <li>
+          <img :src="logo.src" :alt="logo.alt" class="logocarousel" />
+        </li>
+      </template>
+    </ul>    
   </div>
-  <div class="slider-container">
-    <!-- Add your client logos here -->
-    <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="Client 1" class="logo">
-    <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="Client 2" class="logo">
-    <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="Client 1" class="logo">
-    <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="Client 2" class="logo">
-    <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="Client 1" class="logo">
-    <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="Client 2" class="logo">  
-    <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="Client 1" class="logo">
-    <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="Client 2" class="logo">
-    <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="Client 1" class="logo">
-    <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="Client 2" class="logo">
-    <!-- Add more client logos as needed -->
-</div>
+  </div>
+
 </main>
 
 
@@ -121,63 +137,10 @@ Join Discord Community
 </template>
 
 <style scoped>
+.logocarousel{
+  max-width: 50px;
+}
 
-
-        .slider-container {
-            display: flex;
-            overflow: hidden;
-        }
-
-        .logo {
-            width: 150px; /* Adjust the width as needed */
-            height: auto;
-            margin-right: 20px; /* Adjust the spacing between logos */
-            animation: slide 60s linear infinite;
-        }
-
-        @keyframes slide {
-            0% {
-                transform: translateX(0);
-            }
-            25% {
-                transform: translateX(-100%);
-            }
-            50% {
-                transform: translateX(-200%);
-            }
-            75% {
-                transform: translateX(-300%);
-            }
-            100% {
-                transform: translateX(0);
-            }
-        }
-        
-        .logo1 {
-            width: 150px; /* Adjust the width as needed */
-            height: auto;
-            margin-right: 20px; /* Adjust the spacing between logos */
-            animation: slide1 60s linear infinite;
-        }
-
-        @keyframes slide1 {
-            0% {
-                transform: translateX(0);
-            }
-            25% {
-                transform: translateX(100%);
-            }
-            50% {
-                transform: translateX(200%);
-            }
-            75% {
-                transform: translateX(300%);
-            }
-            100% {
-                transform: translateX(0);
-            }
-        }
-        
 </style>
 
 <script>
